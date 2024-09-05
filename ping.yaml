@@ -1,7 +1,8 @@
 - name: Ping the server
-  hosts: local
-  connection: local
+  hosts: web
+  # connection: local
   tasks:
   - name: Ping Pong
-    ansible.builtin.debug:
-     msg:  Server is connecting
+    ansible.builtin.ping
+    # ansible.builtin.debugping:
+    #  msg:  Server is connecting
