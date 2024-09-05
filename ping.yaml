@@ -1,3 +1,4 @@
 - name: Ping the server
+  host: local
   ansible.builtin.debug:
     msg:  Server is connecting
