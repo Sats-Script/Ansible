@@ -1,5 +1,6 @@
 - name: Ping the server
   hosts: local
   tasks:
+  - name: Ping Pong
     ansible.builtin.debug:
      msg:  Server is connecting
