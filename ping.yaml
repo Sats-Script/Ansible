@@ -3,6 +3,6 @@
   # connection: local
   tasks:
   - name: Ping Pong
-    ansible.builtin.ping
+    ansible.builtin.ping:
     # ansible.builtin.debugping:
     #  msg:  Server is connecting
