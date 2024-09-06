@@ -5,9 +5,9 @@
     course: "AWS Devops"
     duration: 150.0
     topics:
-     - Shell
-     - Ansible
-     - kubernetes 
+    - Shell
+    - Ansible
+    - kubernetes 
     livestream: true
     tools:
        ci=Jenkins
