@@ -1,0 +1,6 @@
+- name: Variables from Inventory
+  hosts: web
+  tasks:
+  - name: Accessing variables from inventory
+    ansible.builtin.debug:
+      msg: "This is {{Course}} by {{Mentor}} "
