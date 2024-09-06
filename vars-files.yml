@@ -3,6 +3,6 @@
   vars_files:
   -  vars.yml
   tasks:
-    name: Sample of other file variables
+  -  name: Sample of other file variables
     ansible.builtin.debug:
       msg: "This is {{Course}}, {{duration}}, by {{mentor}}"
