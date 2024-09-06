@@ -1,0 +1,8 @@
+- name: Devops Course
+  hosts: local
+  connection: local
+  tasks:
+  - name: Print information in detail
+    ansible.builtin.debug:
+      msg:  "This is {{course}} with total duration of {{duration}} and topics covering are {{topics}} with livestream {{livestream}} includes {{tools}} also"
+  
