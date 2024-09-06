@@ -4,5 +4,5 @@
   -  vars.yml
   tasks:
   -  name: Sample of other file variables
-    ansible.builtin.debug:
-      msg: "This is {{Course}}, {{duration}}, by {{mentor}}"
+     ansible.builtin.debug:
+       msg: "This is {{Course}}, {{duration}}, by {{mentor}}"
