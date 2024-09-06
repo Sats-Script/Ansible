@@ -10,8 +10,8 @@
     - kubernetes 
     livestream: true
     tools:
-       ci=Jenkins
-       cm=Ansible
+       ci: Jenkins
+       cm: Ansible
   tasks:
   - name: Print information in detail
     ansible.builtin.debug:
