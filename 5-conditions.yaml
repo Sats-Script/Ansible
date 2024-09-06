@@ -13,5 +13,5 @@
 
   - name: greterthan execution
     ansible.builtin.debug:
-      msg: "Given number {{numb}} is greater than 10"
+      msg: "Given number {{numb}} is greater than or equal to 10"
     when: numb | int >= 10
