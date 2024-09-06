@@ -1,0 +1,6 @@
+- name: Variables from arguments
+  hosts: web
+  tasks:
+  - name: Args variables
+    ansible.builtin.debug:
+      msg: "Thsis Is {{Name}} , {{Greeting}}"
