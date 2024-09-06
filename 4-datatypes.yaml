@@ -1,17 +1,6 @@
 - name: Devops Course
   hosts: local
-  connection: local
-  vars:
-    course: "AWS Devops"
-    duration: 150.0
-    topics:
-    - Shell
-    - Ansible
-    - kubernetes 
-    livestream: true
-    tools:
-       ci: Jenkins
-       cm: Ansible
+  connection: local 
   tasks:
   - name: Print information in detail
     ansible.builtin.debug:
