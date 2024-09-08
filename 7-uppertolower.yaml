@@ -1,0 +1,28 @@
+- name: Convert case of a given string
+  hosts: web
+  gather_facts: no
+  vars:
+    # Default value if no variable is provided
+    input_string: "HELLO WORLD"
+  tasks:
+    - name: Print the original string
+      debug:
+        msg: "Original string: {{ input_string }}"
+
+    - name: Convert upper case to lower case
+      shell: |
+        echo "{{ input_string }}" | tr 'A-Z' 'a-z'
+      register: lower_case_result
+
+    - name: Print lower case result
+      debug:
+        msg: "Lower case result: {{ lower_case_result.stdout }}"
+
+    - name: Convert lower case to upper case
+      shell: |
+        echo "{{ input_string }}" | tr 'a-z' 'A-Z'
+      register: upper_case_result
+
+    - name: Print upper case result
+      debug:
+        msg: "Upper case result: {{ upper_case_result.stdout }}"
