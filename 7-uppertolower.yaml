@@ -3,7 +3,7 @@
   gather_facts: no
   # vars:
   #   # Default value if no variable is provided
-  #   input_string: "HELLO WORLD"
+  #   input_string:
   tasks:
     - name: Print the original string
       debug:
