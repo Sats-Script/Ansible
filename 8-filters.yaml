@@ -4,4 +4,4 @@
   tasks:
   - name: Printing
     ansible.builtin.debug:
-      msg: " {{ Course }} "
+      msg: " {{ Course | default ( ' Ansible Code ') }} "
