@@ -1,0 +1,7 @@
+- name: Demo on filters/functions
+  hosts: local
+  connections: local
+  tasks:
+  - name: Printing
+    debug:
+      msg: {{ Course }}
