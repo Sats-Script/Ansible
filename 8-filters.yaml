@@ -3,5 +3,5 @@
   connections: local
   tasks:
   - name: Printing
-    debug:
+    ansible.builtin.debug:
       msg: {{ Course }}
